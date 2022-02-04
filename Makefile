@@ -15,9 +15,7 @@ format:
 
 
 test_only:
-	pytest
-	pytest --cov=perfect_python_project tests/
-	pytest -svx --cov-report term-missing --cov-report html --cov-branch --cov
+	pytest --cov=perfect_python_project tests/ -svx --cov-report term-missing --cov-report html --cov-branch
 
 
 test: lint test_only
