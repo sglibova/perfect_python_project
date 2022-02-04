@@ -6,7 +6,7 @@ lint:
 	@echo
 	flake8 .
 	@echo
-	mypy --ignore-missing-imports .
+	mypy .
 
 
 format:
@@ -14,8 +14,5 @@ format:
 	blue .
 
 
-test_only:
-	pytest pytest --cov-report term-missing --cov-report html --cov-branch --cov app/
-
-
-test: lint test_only
+test:
+	pytest --cov-report term-missing --cov-report html --cov-branch --cov app/

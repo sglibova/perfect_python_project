@@ -8,7 +8,7 @@ authors = ["Svitlana Glibova"]
 python = "^3.9"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
+pytest = "*"
 flake8 = "3.8.4"
 blue = "^0.7.0"
 isort = "^5.10.1"
@@ -21,10 +21,9 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.isort]
-skip = [".gitignore"]
 line_length = 90
 profile = "black"
 
 [tool.mypy]
 pretty = true
-exclude = [".gitignore"]
+ignore_missing_imports = true
