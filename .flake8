@@ -1,2 +1,3 @@
 [flake8]
 exclude = .venv/*,venv/*,.pytest_cache/*,__pycache__/*,.pytest_cache/*,.git/*,.gitignore
+ignore = PT013,PT018,W503

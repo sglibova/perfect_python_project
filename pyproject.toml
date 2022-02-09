@@ -27,3 +27,4 @@ profile = "black"
 [tool.mypy]
 pretty = true
 ignore_missing_imports = true
+disallow_untyped_defs = true
